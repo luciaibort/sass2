@@ -1,0 +1,12 @@
+/* EXTEND  */
+
+.primerEstilo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align:right;
+}
+.segundoEstilo {
+    @extend .primerEstilo;
+    font-size: 20px;
+
+}

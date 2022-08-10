@@ -1,0 +1,20 @@
+/* mixin */
+@mixin parrafo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    
+}
+
+.headerProducto {
+    @include parrafo;
+}
+
+@mixin parametros($size, $alineacion) {
+    font-size: $size;
+    text-align: $alineacion;
+}
+    
+.lead {
+    @include parametros(20px, right )
+}
